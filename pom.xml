@@ -183,7 +183,7 @@
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<configuration>
 					<url>http://115.68.116.248/manager/text</url>
-					<path>/ide</path>
+					<path>/coditide</path>
 					<username>admin</username>
 					<password>!@qlxmxhazot!@</password>
 				</configuration>
