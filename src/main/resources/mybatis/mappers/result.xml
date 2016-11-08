@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="result">
+  <select id="selectAll" resultType="resultvo">
+    <![CDATA[ SELECT correctness, used_memory as usedMemory, running_time as runningTime, applicant_id as applicantId, test_case_id as testCaseId FROM result ]]>
+  </select>
+
+  <insert id="insert" parameterType="resultvo">
+    <![CDATA[ insert into result value(#{applicantId}, #{testCaseId}, #{correctness}, #{usedMemory}, #{runningTime} ); ]]>
+  </insert>
+
+  <select id="selectByApplicantAndTestCase" resultType="resultvo" parameterType="resultvo">
+    <![CDATA[ SELECT applicant_id as applicantId, test_case_id as testCaseId, correctness, used_memory as usedMemory, running_time as runningTime FROM result WHERE applicant_id=#{applicantId} and test_case_id=#{testCaseId} ]]>
+  </select>
+
+</mapper>

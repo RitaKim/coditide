@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="testcase">
+  <select id="selectAll" resultType="testcasevo">
+    <![CDATA[ SELECT id, input, problem_info_id as problemInfoId, answer, is_public as isPublic FROM test_case ]]>
+  </select>
+
+  <insert id="insert" parameterType="testcasevo">
+    <![CDATA[ insert into test_case value(null, '2 1 203 \n 2012 1 1\n ...', 1, 3, 1); ]]>
+    <selectKey keyProperty="id" resultType="int">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+  </insert>
+
+  <select id="selectById" resultType="testcasevo" parameterType="int">
+    <![CDATA[  SELECT id, input, problem_info_id as problemInfoId, answer, is_public as isPublic FROM test_case WHERE id=#{id } ]]>
+  </select>
+
+  <select id="selectPublicByProblemInfoId" resultType="testcasevo" parameterType="int">
+    <![CDATA[  SELECT id, input, problem_info_id as problemInfoId, answer, is_public as isPublic FROM test_case WHERE problem_info_id=#{id } and is_public=1 ]]>
+  </select>
+
+  <select id="selectAllByProblemInfoId" resultType="testcasevo" parameterType="int">
+    <![CDATA[  SELECT id, input, problem_info_id as problemInfoId, answer, is_public as isPublic FROM test_case WHERE problem_info_id=#{id } ]]>
+  </select>
+
+  <select id="selectByProblemInfoId2" resultType="int" parameterType="int">
+    <![CDATA[  SELECT id FROM test_case WHERE problem_info_id=#{id } ]]>
+  </select>
+
+
+</mapper>
