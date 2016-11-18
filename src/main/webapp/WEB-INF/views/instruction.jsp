@@ -19,6 +19,8 @@
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/materialize-custom.css"
 	media="screen,projection" />
+	    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/materialize-custom-ide.css"
+          media="screen,projection"/>
 
 </head>
 
