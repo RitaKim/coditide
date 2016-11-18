@@ -37,7 +37,7 @@
                             <br>시험 응시를 위해 발송받은 이메일을 작성하여주세요.
                         <form action="${pageContext.request.contextPath}/instruction" method="post">
                             <div class="row">
-                                <div class="input-field col s12">
+                                <div id="emaildiv" class="input-field col s12">
                                     <input name="email" id="email" type="email" class="validate">
                                     <label for="email">Email</label>
                                 </div>

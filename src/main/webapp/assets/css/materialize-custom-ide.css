@@ -14,15 +14,16 @@
     display: none;
 }
 /* 2. header*/
-#header{height: 34px;}
+#header{height: 34px; min-width: 1470px;}
 #logo{ margin-top: 2px; width: auto; height: 30px;}
 
 /* 5. button */
 
 /*6. ide */
 /*전체 윤곽*/
-body { overflow-y: hidden}
+body { overflow-y: scroll}
 
+#wrapper{	min-width: 1445px;}
 #navbar{ height: 96.5vh; min-width:380px; padding: 1rem 3rem; overflow-y: auto;}
 #tabs { margin-top: 1rem; min-width:273px;  margin-bottom: 2rem;}
 .tabs .tab a {color: #eeeeee}
@@ -45,7 +46,7 @@ button, input, optgroup, select, textarea{color: white;}
 
 #terminal{ height: 34vh; margin:0; overflow-y: auto; min-width: 970px;}
 #buttonline{min-width: 950px;}
-
+#emaildiv{ margin-top: 20px;}
 
 /*
     이현웅 잘생겼따
