@@ -23,17 +23,17 @@
 /*전체 윤곽*/
 body { overflow-y: hidden}
 
-#navbar{ height: 96.5vh; padding: 1rem 3rem; overflow-y: auto;}
-#tabs { margin-top: 1rem; margin-bottom: 2rem;}
+#navbar{ height: 96.5vh; min-width:380px; padding: 1rem 3rem; overflow-y: auto;}
+#tabs { margin-top: 1rem; min-width:273px;  margin-bottom: 2rem;}
 .tabs .tab a {color: #eeeeee}
 .tabs .tab a:hover{color: #bdbdbd }
 .tabs .indicator {background-color: #eeeeee}
 
 #right { margin: 0; padding: 0; }
 
-#workboard {height: 61vh; margin:0 }
+#workboard {height: 61vh; margin:0;min-width: 970px; }
 #workboard .row .col {padding-top: 0.45rem; padding-bottom: 0.45rem;}
-#top-bar { margin: 0;}
+#top-bar { margin: 0; min-width:950px;}
 #select-language { width: 7rem; }
 #workboard .row .col.no-padding {padding-top:0; padding-bottom: 0}
 .input-field{margin:0; padding:0}
@@ -43,8 +43,8 @@ button, input, optgroup, select, textarea{color: white;}
 #editor {height: 51vh; overflow-y: auto;}
 
 
-#terminal{ height: 34vh; margin:0; overflow-y: auto; }
-
+#terminal{ height: 34vh; margin:0; overflow-y: auto; min-width: 970px;}
+#buttonline{min-width: 950px;}
 
 
 /*
