@@ -31,8 +31,7 @@
 					<h4 class="header center black-text bold">Ooops!</h4>
 					<br>
 					<div class="row">
-						<div class="col s8 offset-s2">Link is wrong. Please check
-							your email.</div>
+						<div class="col s8 offset-s2">Link가 잘못되었습니다. 이메일을 다시 한번 확인해주세요.</div>
 					</div>
 				</div>
 			</div>

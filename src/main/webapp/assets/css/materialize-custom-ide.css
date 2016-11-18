@@ -47,7 +47,8 @@ button, input, optgroup, select, textarea{color: white;}
 #terminal{ height: 34vh; margin:0; overflow-y: auto; min-width: 970px;}
 #buttonline{min-width: 950px;}
 #emaildiv{ margin-top: 20px;}
-
+#save-code{width:120px; }
+#load-code{width: 125px;}
 /*
     이현웅 잘생겼따
 */

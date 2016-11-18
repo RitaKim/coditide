@@ -65,11 +65,10 @@
 								<div id="div-timeleft"
 									class="col s3 no-padding btn grey darken-3 z-depth-0 inline timer"
 									data-minutes-left="${totalTime}">
-									<span>Time Left: </span>
+									<span>제한 시간: </span>
 								</div>
 								<div class="col s3 no-padding">
-									<div class="btn grey darken-3 z-depth-0 inline right">SELECT
-										LANGUAGE:</div>
+									<div class="btn grey darken-3 z-depth-0 inline right">코딩 언어 선택 :</div>
 								</div>
 								<div class="input-field col s2 no-padding">
 									<select id="select-language" name="language"
@@ -81,7 +80,7 @@
 								</div>
 								<div class="col s2 no-padding right">
 									<button id="btn-help" class="btn grey darken-1"
-										onclick="help()">Help</button>
+										onclick="help()">도움말</button>
 								</div>
 							</div>
 						</div>
@@ -92,7 +91,7 @@
 							<div class="row">
 								<div class="col s2 no-padding">
 									<button id="save-code" onclick="save_code()"
-										class="btn grey darken-1">SAVE(ctrl+S)</button>
+										class="btn grey darken-1">저장(ctrl+S)</button>
 								</div>
 								<div id="select-testcase"
 									class="input-field col s2 no-padding left">
@@ -108,15 +107,15 @@
 								</div>
 								<div class="col s3 no-padding center">
 									<button id="run-code" onclick="run_code()"
-										class="btn grey darken-1">SAVE & RUN(ctrl+R)</button>
+										class="btn grey darken-1">저장 & 실행(ctrl+R)</button>
 								</div>
 								<div class="col s1 no-padding left">
 									<button id="load-code" onclick="load_code()"
-										class="btn grey darken-1">LOAD</button>
+										class="btn grey darken-1">불러오기</button>
 								</div>
 								<div>
 									<button id="final-submit" class="btn right grey darken-1"
-										onclick="final_submit()">Submit</button>
+										onclick="final_submit()">제출</button>
 								</div>
 							</div>
 						</div>

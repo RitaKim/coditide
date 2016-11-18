@@ -13,15 +13,15 @@ var goTest = function () {
 
 //spotlight 관련 변수, 함수
 var spotLightData = [
-    {target: "#select-problem", msg: 'Click this button to switch task'},
-    {target: "#top-bar > .input-field.col.s2.no-padding", msg: 'You can choose one of three languages'},
-    {target: "#save-code", msg: 'Save current source code. shortcut: ctrl+S'},
-    {target: "#select-testcase", msg: 'You can test source code with input'},
-    {target: "#run-code", msg: 'Execute code(auto saved) shortcut: ctrl+R'},
-    {target: "#load-code", msg: 'Load last saved code. If you close browser by mistake, this button will salvage you'},
-    {target: "#final-submit", msg: 'Submit your solution and finish test'},
-    {target: ".timer", msg: 'After given time, last saved source codes are automatically submitted'},
-    {target: "#btn-help", msg: 'To click this button, you can review tutorial'},
+    {target: "#select-problem", msg: '문제를 선택할 수 있습니다.'},
+    {target: "#top-bar > .input-field.col.s2.no-padding", msg: '세 가지 언어 중 한가지를 선택하여주세요.'},
+    {target: "#save-code", msg: '코드를 반드시 저장하여주세요. 단축키: ctrl+S'},
+    {target: "#select-testcase", msg: '코드의 결과값을 선택할 수 있습니다.'},
+    {target: "#run-code", msg: '코드를 실행하실 경우 자동으로 저장됩니다. 단축키: ctrl+R'},
+    {target: "#load-code", msg: '만약 실수로 시험을 종료하실 경우, 불러오기 버튼을 눌러주세요.(마지막으로 저장한 코드를 불러옵니다.)'},
+    {target: "#final-submit", msg: '시험을 마치셨으면, 제출하여주세요.'},
+    {target: ".timer", msg: '시간을 초과하시면, 마지막으로 저장한 코드가 제출됩니다.'},
+    {target: "#btn-help", msg: '도움말을 누르시면, 도움말이 나옵니다.'},
 ];
 var index = 0;
 //도움말 함수 호출. spotlight해준다
