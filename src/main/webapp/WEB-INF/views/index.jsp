@@ -39,7 +39,6 @@
 							<p>
 								${applicant.name}님 안녕하세요. <br>온라인 코딩 시험에 오신 걸 환영합니다. <br>시험
 								응시를 위해 발송받은 이메일을 작성하여주세요.</p>
-								<br>
 							<form action="${pageContext.request.contextPath}/instruction"
 								method="post">
 								<div class="row">
