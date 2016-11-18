@@ -30,7 +30,7 @@
             <div class="card-panel white">
                 <h4 class="header center black-text bold">환영합니다!</h4>
                 <br>
-                <div class="row">
+                <div class="row" style="margin-top: 20px;">
                     <div class="col s8 offset-s2">
                         <p> ${applicant.name}님 안녕하세요.
                             <br>온라인 코딩 시험에 오신 걸 환영합니다.
