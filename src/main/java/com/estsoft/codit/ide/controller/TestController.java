@@ -31,7 +31,7 @@ public class TestController {
     return "test";
   }
 
-
+  
   /*
   ajax URL
   POST요청을 받으면 작업 내역을 저장해줌
@@ -51,7 +51,6 @@ public class TestController {
   ajax URL
   ajax는 비동기식이므로 source_code를 직접 받아 돌릴수 없음(test.jsp참고)
   applicant_id 와 problem_id 를 받아서 DB에서 식별해줘야 함
-  이후 저장된 소스코드를 컴파일하고 실행하여 결과를 response로 쏴준다
    */
   @Auth
   @ResponseBody

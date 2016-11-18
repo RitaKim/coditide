@@ -51,7 +51,7 @@ public class MainController {
     return "instruction";
   }
 
-
+  
   /*
   applicant가 튜토리얼을 보며 IDE 사용방법을 익히는 페이지
   여기서는 저장버튼을 눌러도 저장안된다 물론 유저입장에서는 저장된것 처럼 느끼게 한다

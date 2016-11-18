@@ -26,13 +26,13 @@
     <div class="row ">
         <div class="col s6 offset-s3">
             <div class="card-panel white">
-                <h4 class="header center black-text bold">Welcome to the test!</h4>
+                <h4 class="header center black-text bold">환영합니다!</h4>
                 <br>
                 <div class="row">
                     <div class="col s8 offset-s2">
-                        <p>Hello . ${applicant.name}
-                            <br>Welcome to coding interview.
-                            <br>To login, please write your email</p>
+                        <p> ${applicant.name}님 안녕하세요.
+                            <br>온라인 코딩 시험에 오신 걸 환영합니다.
+                            <br>시험 응시를 위해 발송받은 이메일을 작성하여주세요.
                         <form action="${pageContext.request.contextPath}/instruction" method="post">
                             <div class="row">
                                 <div class="input-field col s12">
@@ -42,7 +42,7 @@
                             </div>
                             <input type="hidden" name="ticket" value="${param.ticket}"/>
                             <div class="center">
-                                <button type="submit" class="btn brown white-text">Submit</button>
+                                <button type="submit" class="btn brown white-text">로그인</button>
                             </div>
                         </form>
                     </div>

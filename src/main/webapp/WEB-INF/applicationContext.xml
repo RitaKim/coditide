@@ -22,12 +22,10 @@
   <!-- Connection Pool DataSource -->
   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
     <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-    <property name="url" value="jdbc:mysql://localhost:3306/codit" />
-    <property name="username" value="root"/>
-    <property name="password" value="!@qlxmelql!@" />
-
-    <!-- 요 밑에거 없어도 잘 된다?-->
-    <!--property name="connectionProperties" value="useUnicode=yes;characterEncoding=utf8;"/-->
+    <property name="url" value="jdbc:mysql://115.68.116.248:3306/codit" />
+    <property name="username" value="codit-dev" />
+    <property name="password" value="!@coditdb!@" />
+    <property name="connectionProperties" value="useUnicode=yes;characterEncoding=utf8;"/>
   </bean>
 
   <!-- MyBatis SqlSessionFactoryBean -->

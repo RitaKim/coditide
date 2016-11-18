@@ -10,11 +10,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="${pageContext.request.contextPath}/assets/image/0630_favicon_beige.ico">
+   
     <title>test page</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/materialize/css/materialize.min.css"/>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/materialize-custom-ide.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/materialize-custom-ide.css" media="screen,projection"/> 
 </head>
 <body>
 <div id="wrapper" class="row">
@@ -68,7 +69,7 @@
 
                     <div id = "editor" class="col s12 grey darken-4"></div>
 
-                    <div class="col s12 grey darken-3">
+                    <div id="buttonline" class="col s12 grey darken-3">
                         <div class="row">
                             <div class="col s2 no-padding">
                                 <button id="save-code" onclick="save_code()" class="btn grey darken-1">SAVE(ctrl+S)</button>
