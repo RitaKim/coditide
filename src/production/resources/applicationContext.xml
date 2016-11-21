@@ -1,43 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-  <!-- context schema -->
-  <context:annotation-config/>
+	<!-- context schema -->
+	<context:annotation-config />
 
-  <context:component-scan base-package="com.estsoft.codit">
-    <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
-    <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
-    <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
-  </context:component-scan>
+	<context:component-scan base-package="com.estsoft.codit">
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Service" />
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Component" />
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Repository" />
+	</context:component-scan>
 
-  <!-- Connection Pool DataSource -->
-  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-    <property name="url" value="jdbc:mysql://115.68.116.248:3306/codit?autoReconnect=true" />
-    <property name="username" value="codit-dev" />
-    <property name="password" value="!@coditdb!@" />
-    <property name="connectionProperties" value="useUnicode=yes;characterEncoding=utf8;"/>
-  </bean>
+	<!-- Connection Pool DataSource -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://115.68.116.248:3306/codit?autoReconnect=true" />
+		<property name="username" value="codit-dev" />
+		<property name="password" value="!@coditdb!@" />
+		<property name="connectionProperties" value="useUnicode=yes;characterEncoding=utf8;" />
+		<!-- validationQuery:유효 검사용 쿼리( 1개 이상의 row를 반환하는 쿼리를 넣어주면 된다. ) -->
+		<property name="validationQuery" value="select 1" />
+		<!-- testWhileIdle:컨넥션이 놀고 있을때 -_-; validationQuery 를 이용해서 유효성 검사를 할지 여부. -->
+		<property name="testWhileIdle" value="true" />
+		<!-- timeBetweenEvictionRunsMillis:해당 밀리초마다 validationQuery 를 이용하여 유효성 
+			검사 진행 -->
+		<property name="timeBetweenEvictionRunsMillis" value="7200000" />
+	</bean>
 
-  <!-- MyBatis SqlSessionFactoryBean -->
-  <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-    <property name="dataSource" ref="dataSource" />
-    <property name="configLocation" value="classpath:mybatis/configuration.xml" />
-  </bean>
+	<!-- MyBatis SqlSessionFactoryBean -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis/configuration.xml" />
+	</bean>
 
-  <!-- MyBatis SqlSessionTemplate -->
-  <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
-    <constructor-arg index="0" ref="sqlSessionFactory" />
-  </bean>
+	<!-- MyBatis SqlSessionTemplate -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg index="0" ref="sqlSessionFactory" />
+	</bean>
 
 
 
