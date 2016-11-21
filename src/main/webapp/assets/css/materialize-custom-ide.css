@@ -28,7 +28,7 @@ body { overflow-y: scroll}
 #tabs { margin-top: 1rem; min-width:273px;  margin-bottom: 2rem;}
 .tabs .tab a {color: #eeeeee}
 .tabs .tab a:hover{color: #bdbdbd }
-.tabs .indicator {background-color: #eeeeee}
+.tabs .indicator {backround-color: #eeeeee}
 
 #right { margin: 0; padding: 0; }
 
