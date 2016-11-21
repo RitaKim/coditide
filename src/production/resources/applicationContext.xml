@@ -22,7 +22,7 @@
   <!-- Connection Pool DataSource -->
   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
     <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-    <property name="url" value="jdbc:mysql://localhost:3306/codit" />
+    <property name="url" value="jdbc:mysql://localhost:3306/codit?autoReconnect=true" />
     <property name="username" value="codit" />
     <property name="password" value="!@coditdb!@" />
     <property name="connectionProperties" value="useUnicode=yes;characterEncoding=utf8;"/>
