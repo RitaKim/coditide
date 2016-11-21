@@ -30,24 +30,24 @@
 		<br> <br>
 		<div class="row ">
 			<div class="col s6 offset-s3">
-				<div class="card-panel white">
+				<div id="resultbox" class="card-panel white">
 					<div class="row">
 						<div class="col s10 offset-s1">
-							<h4 class="grey-text">Report Page</h4>
-							<h5 class="center-align">Good job, ${applicantVo.name }!</h5>
-							<br> <img class="center-block" height="320" width="386"
-								src="${pageContext.request.contextPath }/assets/image/fighting-racoon.jpg" />
+							<h4 class="grey-text">시험 결과</h4>
+							<h5 class="center-align">${applicantVo.name }님 수고하셨습니다!</h5>
+							<br><%--  <img class="center-block" height="320" width="386"
+								src="${pageContext.request.contextPath }/assets/image/fighting-racoon.jpg" /> --%>
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col s10 offset-s1">
-							<h4>Summary</h4>
+							<h4>총점</h4>
 							<table class="striped centered">
 								<thead>
 									<tr>
-										<th>Problem</th>
-										<th>No.of right answers / Total no. of test cases</th>
+										<th>문제</th>
+										<th>정답 수 / 총 문제 수</th>
 									</tr>
 								</thead>
 								<c:forEach items="${resultListOfList}" var="resultList"
@@ -59,7 +59,7 @@
 												<c:set var="count" value="${count + 1}" scope="page" />
 											</c:if>
 										</c:forEach>
-										<td>Task ${status.index + 1}</td>
+										<td>문제 ${status.index + 1}</td>
 										<td>${count}/ ${resultList.size() }</td>
 									</tr>
 								</c:forEach>
@@ -70,11 +70,11 @@
 
 					<div class="row">
 						<div class="col s10 offset-s1">
-							<h4>Details</h4>
+							<h4>상세보기</h4>
 							<br>
 							<c:forEach items="${resultListOfList}" var="resultList"
 								varStatus="status">
-								<h5 class="grey-text">Problem ${status.index + 1}</h5>
+								<h5 class="grey-text">문제 ${status.index + 1}</h5>
 								<a href="/result/${status.index + 1}"
 									class="waves-effect waves-light btn">show source tree</a>
 								<table class="bordered centered">

@@ -49,6 +49,7 @@ button, input, optgroup, select, textarea{color: white;}
 #emaildiv{ margin-top: 20px;}
 #save-code{width:120px; }
 #load-code{width: 125px;}
+#resultbox{min-width:605px;}
 /*
     이현웅 잘생겼따
 */
