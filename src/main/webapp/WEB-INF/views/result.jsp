@@ -33,7 +33,7 @@
 				<div id="resultbox" class="card-panel white">
 					<div class="row">
 						<div class="col s10 offset-s1">
-							<h4 class="grey-text center-align">시험 결과</h4><br><br>
+							<h4 class="grey-text center-align">시험 결과</h4><br>
 							<h5 class="center-align">${applicantVo.name }님 수고하셨습니다!</h5>
 							<br><%--  <img class="center-block" height="320" width="386"
 								src="${pageContext.request.contextPath }/assets/image/fighting-racoon.jpg" /> --%>
