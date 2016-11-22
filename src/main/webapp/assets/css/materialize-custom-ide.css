@@ -38,7 +38,8 @@ body { overflow-y: scroll}
 #select-language { width: 7rem; }
 #workboard .row .col.no-padding {padding-top:0; padding-bottom: 0}
 .input-field{margin:0; padding:0}
-button, input, optgroup, select, textarea{color: black;}
+button, input, optgroup, select, textarea{color: white;}
+
 .select-wrapper input.select-dropdown{ margin:0; height: 2rem;}
 #select-testcase { width: 15rem; margin-left:1rem; margin-right: 1rem;}
 #editor {height: 51vh; overflow-y: auto;}
@@ -50,6 +51,7 @@ button, input, optgroup, select, textarea{color: black;}
 #save-code{width:120px; }
 #load-code{width: 125px;}
 #resultbox{min-width:605px;}
+#email{color:black;}
 /*
     이현웅 잘생겼따
 */
