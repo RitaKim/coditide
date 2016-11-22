@@ -68,8 +68,8 @@ var select_editor = function (k, language_id) {
             editor.getSession().setMode("ace/mode/java");
             break;
         case '3':
-            mode = "ace/mode/python";
-            editor.getSession().setMode("ace/mode/python");
+            mode = "ace/mode/c_cpp";
+            editor.getSession().setMode("ace/mode/c_cpp");
             break;
         default:
             mode = "ace/mode/text";

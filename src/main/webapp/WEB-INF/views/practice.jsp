@@ -57,7 +57,7 @@
                                 <select id="select-language" name="language" onchange="select_editor(current_k, this.value);">
                                     <option value="1">C</option>
                                     <option value="2">JAVA</option>
-                                    <option value="3">PYTHON</option>
+                                    <option value="3">C++</option>
                                 </select>
                             </div>
                             <div class="col s2 no-padding right">
